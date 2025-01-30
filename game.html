@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game">
+        <header class="titles">
+            <div class="titlegame">Tic Tac Toe Game</div>
+            <div class="title">Turn X</div>
+        </header>
+
+        <section class="listcell">
+
+            <div class="lcell">
+                <div class="cell" id="cell1" onclick="game(this.id)"></div>
+                <div class="cell" id="cell2" onclick="game(this.id)"></div>
+                <div class="cell" id="cell3" onclick="game(this.id)"></div>
+            </div>
+    
+            <div class="lcell">
+                <div class="cell" id="cell4" onclick="game(this.id)"></div>
+                <div class="cell" id="cell5" onclick="game(this.id)"></div>
+                <div class="cell" id="cell6" onclick="game(this.id)"></div>
+            </div>
+
+            <div class="lcell">
+                <div class="cell" id="cell7" onclick="game(this.id)"></div>
+                <div class="cell" id="cell8" onclick="game(this.id)"></div>
+                <div class="cell" id="cell9" onclick="game(this.id)"></div>
+            </div>
+
+        </section>
+
+        <div class="players" id="result">
+            <div class="player">
+                <label id="scoreX">Player X score : <span>0</span></label>
+            </div>
+            <div class="player">
+                <label id="scoreO">Player O score : <span>0</span></label>
+            </div>
+        </div>
+
+        <div class="boutton">
+            <button class="btn" id="replay" onclick="replay()">Replay Game</button>
+            <button class="btn" id="AI Game" onclick="AI_game()">Play Against an AI</button>
+        </div>
+        <script src="game.js"> </script>
+    </div>   
+</body>
+</html>
